@@ -6,7 +6,7 @@
 
 ## Figure 1. The Framework of scPN
 
-![Figure 1](scPN/pipline_revised.png)
+![Figure 1](/pipline_revised.png)
 
 **Figure 1.** *The framework of scPN, which can simultaneously obtain the temporal dynamics and the gene-gene interaction matrix.*
 
