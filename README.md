@@ -24,6 +24,23 @@ To use **scPN**, you need to install the following Python packages:
 pip install scanpy scvelo numpy torch matplotlib
 ```
 
+### Example
+
+```python
+import scPN
+
+data_path = 'path/to/your/adata.h5ad'
+adata, adata_100, target_idx = scPN.preprocess(data_path)
+
+# Set the root cluster (leiden label of initial cells)
+cluster_root = '16'
+
+adata = scPN.get_adata_all_pseudotime(adata, adata_100, cluster_root, target_idx)
+
+# Visualize pseudotime on UMAP
+scPN.pl_pseudotime(adata)
+
+
 ## 🚀 Usage
 
 To run the demo, simply run the cells in Test&Contrast one by one.
